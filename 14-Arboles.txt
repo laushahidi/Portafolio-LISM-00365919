@@ -1,0 +1,38 @@
+ÁRBOL 1:
+
+Nodo raíz: A
+Nodos ramas: B, C, D, E
+Nodos hojas: G, H, I, F
+
+Nivel de cada nodo: Nivel 0: A - Nivel 1: B, C - Nivel 2: D, E, F - Nivel 3: G, H, I.
+
+Profundidad: 3
+Peso: 9
+Orden: 2
+
+Lleno o estricto? No
+Perfecto o completo? No
+Recorridos
+in-orden: (IRD) - D, G, B, A, H, E, I, C, F
+pre-orden: (RID) -  A, B, D, G, C, E, H, I, F
+post-orden: (IDR) - G, D, B, H, I, E, F, C, A
+
+ÁRBOL 2:
+
+Nodo raíz: A 
+Nodos ramas: B, C, D, E, F, H
+Nodos hojas: G, I, J, K, L
+
+Nivel de cada nodo: Nivel 0: A - Nivel 1: B - Nivel 2: C, D - Nivel 3: E, F, G, H - Nivel 4: I, J, K, L
+
+Profundidad: 4
+Peso: 12
+Orden: 2
+
+Lleno o estricto? No
+
+Perfecto o completo? No
+Recorridos
+in-orden: (IRD) - E, I, C, F, J, B, G, D, K, H, L, A
+pre-orden: (RID) - A, B, C, E, I, F, J, D, G, H, K, L, 
+post-orden: (IDR) - I, E, J, F, C, G , K, L, H, D, B, A
