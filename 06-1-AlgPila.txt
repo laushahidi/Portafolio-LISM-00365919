@@ -1,0 +1,13 @@
+Pila s;
+float a;
+int x = 0;
+
+while(!s.empty){
+    x = 1;
+    a = s.pop();
+}
+
+if(x == 0)
+    cout << "Pila vacía";
+else
+    return a;
