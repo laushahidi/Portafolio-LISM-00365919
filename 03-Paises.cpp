@@ -1,11 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct continente{
     string nombre;
     string capital;
     double habitantes;
-    int promedioedad;
 };
 
 typedef struct continente cont;
@@ -14,13 +14,13 @@ void registro(cont *p){
 
     for(int i = 0; i < 5; i++){
         cout << "\nPaís: ";
-        getline(cin, p->nombre);
+        getline(cin, (p+i)->nombre);
         cout << "Capital: ";
-        getline(cin, p->capital);
+        getline(cin, (p+i)->capital);
         cout << "Número de habitantes: ";
-        cin >> p->habitantes;
-        cout << "Promedio de edad: ";
-        cin >> p->promedioedad;
+        cin >> (p+i)->habitantes;
+        //cout << "Promedio de edad: ";
+        //cin >> p->promedioedad;
         cin.ignore();
         
     }
@@ -30,7 +30,7 @@ void poblacionTotal(cont *p){
     
     int suma = 0;
     for(int i = 0; i < 5; i++){
-        suma += p->habitantes;
+        suma += (p+i)->habitantes;
     }
     
     cout << "\nLa poblacion total del continente es de: " << suma << endl;
@@ -38,13 +38,16 @@ void poblacionTotal(cont *p){
 
 void capitalMayorPoblacion(cont *p){
     
-    for(int i = 0; i < 5; i++){
-        if(p->habitantes > );
+    int r = (p+0)->habitantes;
+    string h = (p+0)->capital;
+    for (int i = 0; i < 5; i++){  
+        if (r < (p+i)->habitantes){
+            
+            r = (p+i)->habitantes;
+            h = (p+i)->capital;
+        }
     }
-}
-
-void promedioEdadCont(cont *p){
-    
+    cout << "\nLa capital con mayor poblacion es: " << h << endl;
 }
 
 int main()
@@ -56,4 +59,3 @@ int main()
 
     return 0;
 }
-
