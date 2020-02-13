@@ -1,0 +1,5 @@
+1. Se inicializa una nueva lista
+2. Se pone la lista actual en una nueva auxiliar
+3. Mientras la lista no esté vacía se crea un ciclo while
+4. Se almacenan el dato del principio de la lista existente en el último nodo de la nueva lista
+5. Se guarda la lista invertida.
