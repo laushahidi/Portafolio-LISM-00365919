@@ -1,3 +1,4 @@
+// Mediana
 #include <iostream>
 using namespace std;
 
@@ -8,14 +9,11 @@ float mediana(float *a, int n){
 
     if(n % 2 == 0){
         b = n / 2;
-        cout << "B: " << b << endl;
-        cout << "asubb-1: " << a[b-1] << " asubb: " << a[b] << endl;
         med = (a[b-1] + a[b]) / 2;    
     }
 
     else{
         b = (n / 2) + 1;
-        cout << "B: " << b << endl;
         med = a[b - 1];
     }
 
